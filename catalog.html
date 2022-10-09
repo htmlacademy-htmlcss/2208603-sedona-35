@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+  <div class="layout">
 <header class="page-header">
 <nav class="navigation">
 <ul class="navigation-list">
 <li class="navigation-item">
-  <a class="navigation-link" href="main.html"></a>
+  <a class="navigation-link" href="index.html"></a>
   <img src="images/decor/logo-index.svg" alt="header-logo">
 </li>
 <li class="navigation-item">
-  <a class="navigation-link" href="main.html">Главная</a>
+  <a class="navigation-link" href="index.html">Главная</a>
 </li>
 <li class="navigation-item">
   <a class="navigation-link" href="about.html">О Седоне</a>
@@ -45,6 +46,7 @@
 </nav>
 </header>
 <main class="main-inner">
+  <section class="filter-section">
   <header class="inner-header">
     <h1 class="inner-header-title">Гостиницы Седоны</h1>
   </header>
@@ -58,7 +60,6 @@
       <a class="breadcrumbs-link">Гостиницы</a>
     </li>
   </ul>
-  <section class="catalog-hotels">
     <h2 class="visually-hidden">Список параметров</h2>
     <fieldset class="catalog-filter-group">
     <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -98,13 +99,14 @@
     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
     <button class="button" type="erase">Сбросить</button>
     </form>
+  </section>
+  <div class="sorting-container">
   <p>Найдено гостиниц:</p><span>38</span>
   <select class="select-control" aria-label="Сортировка">
     <option value="cheap">Сначала дешёвые</option>
     <option value="expensive">Сначала дорогие</option>
     <option value="popular">Сначала популярные</option>
   </select>
-</section>
   <a class="button" href="#">
   <span class="visually-hidden">Показать карточки</span>
   </a>
@@ -114,6 +116,7 @@
   <a class="button" href="#">
   <span class="visually-hidden">Показать список</span>
   </a>
+</div>
   <ul class="product-list"></ul>
   <li class="product-card">
   <a class="product-card-link" href="product.html">
@@ -124,8 +127,8 @@
   <p class="product-card-price">От 4000 ₽</p>
   <a class="product-card-button button" href="#">Подробнее</a>
   <a class="product-card-button button" href="#">В избранное</a>
-  <img src="#" alt="four-stars">
-  <p>Рейтинг:8.5</p></li>
+  <img src="images/decor/four-stars.svg" alt="four-stars">
+  <p class="rating">Рейтинг:8.5</p></li>
   <li class="product-card">
     <a class="product-card-link" href="product.html">
       <img class="product-card-image" src="images/content/hotel-villas-pocodiablo.jpg" width="300" height="212" alt="villas-poco-diablo">
@@ -135,8 +138,8 @@
     <p class="product-card-price">От 5000 ₽</p>
     <a class="product-card-button button" href="#">Подробнее</a>
     <a class="product-card-button button" href="#">В избранное</a>
-    <img src="#" alt="four-stars">
-    <p>Рейтинг:9.2</p></li>
+    <img src="images/decor/four-stars.svg" alt="four-stars">
+    <p class="rating">Рейтинг:9.2</p></li>
     <li class="product-card">
       <a class="product-card-link" href="product.html">
         <img class="product-card-image" src="images/content/hotel-desert-quail.jpg" width="300" height="212" alt="desert-quail-inn">
@@ -146,8 +149,8 @@
       <p class="product-card-price">От 2500 ₽</p>
       <a class="product-card-button button" href="#">Подробнее</a>
       <a class="product-card-button button" href="#">В избранное</a>
-      <img src="#" alt="three-stars">
-      <p>Рейтинг:6.9</p></li>
+      <img src="images/decor/three-stars.svg" alt="three-stars">
+      <p class="rating">Рейтинг:6.9</p></li>
       <li class="product-card">
         <a class="product-card-link" href="product.html">
           <img class="product-card-image" src="images/content/hotel-greentree-inn.jpg" width="300" height="212" alt="greentree-inn">
@@ -157,8 +160,8 @@
         <p class="product-card-price">От 1500 ₽</p>
         <a class="product-card-button button" href="#">Подробнее</a>
         <a class="product-card-button button" href="#">В избранное</a>
-        <img src="#" alt="two-stars">
-        <p>Рейтинг:5.0</p></li>
+        <img src="images/decor/two-stars.svg" alt="two-stars">
+        <p class="rating">Рейтинг:5.0</p></li>
   </ul>
   <ul class="pagination">
     <li class="pagination-item">
@@ -181,8 +184,8 @@
     </li>
   </ul>
   <section class="subscribe subscribe-catalog">
-    <h2>Подпишитесь на рассылку</h2>
-    <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+    <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form action="https://echo.htmlacademy.ru" method="post">
     <input type="text" name="enter-email" placeholder="Ваш e-mail">
     <button class="button" type="subscribe">Подписаться</button>
@@ -216,5 +219,6 @@
   <img src="#" alt="logo-htmlacademy">
 </section>
 </footer>
+</div>
   </body>
 </html>
