@@ -101,7 +101,8 @@
     </form>
   </section>
   <div class="sorting-container">
-  <p>Найдено гостиниц:</p><span>38</span>
+  <p class="sorting-results">Найдено гостиниц:</p>
+  <span class="sorting-results">38</span>
   <select class="select-control" aria-label="Сортировка">
     <option value="cheap">Сначала дешёвые</option>
     <option value="expensive">Сначала дорогие</option>
@@ -118,28 +119,30 @@
   </a>
 </div>
   <ul class="product-list">
-  <li class="product-card">
-  <a class="product-card-link" href="product.html">
-    <img class="product-card-image" src="images/content/hotel-amara-resort.jpg" width="300" height="212" alt="amara-resort">
-    <h3 class="product-card-title">Amara Resort & Spa</h3>
-  </a>
-  <p>Гостиница</p>
-  <p class="product-card-price">От 4000 ₽</p>
-  <a class="product-card-button button" href="#">Подробнее</a>
-  <a class="product-card-button button" href="#">В избранное</a>
-  <img src="images/decor/four-stars.svg" alt="four-stars">
-  <p class="rating">Рейтинг:8.5</p></li>
+    <li class="product-card">
+      <a class="product-card-link" href="product.html">
+        <img class="product-card-image" src="images/content/hotel-amara-resort.jpg" width="300" height="212" alt="amara-resort">
+        <h3 class="product-card-title">Amara Resort & Spa</h3>
+      </a>
+      <p>Гостиница</p>
+      <p class="product-card-price">От 4000 ₽</p>
+      <a class="product-card-button button product-card-button-more" href="#">Подробнее</a>
+      <a class="product-card-button button product-card-button-favorites" href="#">В избранное</a>
+      <img class="rating-image" src="images/decor/four-stars.svg" alt="four-stars">
+      <p class="rating">Рейтинг:8.5</p>
+      </li>
   <li class="product-card">
     <a class="product-card-link" href="product.html">
       <img class="product-card-image" src="images/content/hotel-villas-pocodiablo.jpg" width="300" height="212" alt="villas-poco-diablo">
       <h3 class="product-card-title">Villas at Poco Diablo</h3>
     </a>
-    <p>Гостиница</p>
+    <p class="product-name">Гостиница</p>
     <p class="product-card-price">От 5000 ₽</p>
-    <a class="product-card-button button" href="#">Подробнее</a>
-    <a class="product-card-button button" href="#">В избранное</a>
-    <img src="images/decor/four-stars.svg" alt="four-stars">
-    <p class="rating">Рейтинг:9.2</p></li>
+    <a class="product-card-button button product-card-button-more" href="#">Подробнее</a>
+    <a class="product-card-button button product-card-button-favorites" href="#">В избранное</a>
+    <img class="rating-image" src="images/decor/four-stars.svg" alt="four-stars">
+    <p class="rating">Рейтинг:9.2</p>
+    </li>
     <li class="product-card">
       <a class="product-card-link" href="product.html">
         <img class="product-card-image" src="images/content/hotel-desert-quail.jpg" width="300" height="212" alt="desert-quail-inn">
@@ -147,9 +150,9 @@
       </a>
       <p>Гостиница</p>
       <p class="product-card-price">От 2500 ₽</p>
-      <a class="product-card-button button" href="#">Подробнее</a>
-      <a class="product-card-button button" href="#">В избранное</a>
-      <img src="images/decor/three-stars.svg" alt="three-stars">
+      <a class="product-card-button button product-card-button-more" href="#">Подробнее</a>
+      <a class="product-card-button button product-card-button-favorites" href="#">В избранное</a>
+      <img class="rating-image" src="images/decor/three-stars.svg" alt="three-stars">
       <p class="rating">Рейтинг:6.9</p></li>
       <li class="product-card">
         <a class="product-card-link" href="product.html">
@@ -158,9 +161,9 @@
         </a>
         <p>Гостиница</p>
         <p class="product-card-price">От 1500 ₽</p>
-        <a class="product-card-button button" href="#">Подробнее</a>
-        <a class="product-card-button button" href="#">В избранное</a>
-        <img src="images/decor/two-stars.svg" alt="two-stars">
+        <a class="product-card-button button product-card-button-more" href="#">Подробнее</a>
+        <a class="product-card-button button product-card-button-favorites" href="#">В избранное</a>
+        <img class="rating-image" src="images/decor/two-stars.svg" alt="two-stars">
         <p class="rating">Рейтинг:5.0</p></li>
   </ul>
   <ul class="pagination">
@@ -192,7 +195,7 @@
     </form>
     </section>
 </main>
-<footer class="page-footer">
+<footer class="page-footer footer-container">
 <section class="footer-social">
 <ul class="footer-social-list">
   <li class="footer-social-item">
