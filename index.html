@@ -11,8 +11,9 @@
 <nav class="navigation">
 <ul class="navigation-list">
 <li class="navigation-item">
-  <a class="navigation-link" href="index.html"></a>
+  <a class="navigation-link navigation-logo" href="index.html">
   <img src="images/decor/logo-index.svg" alt="header-logo">
+</a>
 </li>
 <li class="navigation-item">
   <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
@@ -40,9 +41,8 @@
       <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z" fill="black"/>
       </svg>
-      <span class="visually-hidden">
-      Галерея
-    </span>
+    <span class="count-badge">12</span>
+    <span class="visually-hidden">Галерея</span>
     </a>
   </li>
   <li class="navigation-item">
@@ -68,7 +68,7 @@
     <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
   </li>
   <li class="advantages-item advantages-item-img">
-    <img src="images/content/real-town.jpg" width="800" height="384" alt="image-real-town">
+    <img class="advantages-item-img" src="images/content/real-town.jpg" width="800" height="384" alt="image-real-town">
   </li>
   <li class="advantages-item advantages-item-area">
     <h3 class="advantages-title">Небольшая площадь</h3>
@@ -83,7 +83,7 @@
     <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
   </li>
   <li class="advantages-item advantages-item-img">
-    <img src="images/content/poco-diablo.jpg" width="800" height="384" alt="image-devils-bridge">
+    <img class="advantages-item-img" src="images/content/poco-diablo.jpg" width="800" height="384" alt="image-devils-bridge">
   </li>
   <li class="advantages-item advantages-item-bridge">
     <h3 class="advantages-title">Там есть мост дьявола</h3>
@@ -91,17 +91,17 @@
   </li>
   <li class="advantages-item advantages-item-housing advantages-img amenities">
     <img src="images/decor/advantage-icon-house.svg" alt="Жилье">
-    <h3 class="advantages-title">Жилье</h3>
+    <h3 class="amenities-title">Жилье</h3>
     <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
   </li>
   <li class="advantages-item advantages-item-food advantages-img amenities">
     <img src="images/decor/advantage-icon-burger.svg" alt="Еда">
-    <h3 class="advantages-title">Еда</h3>
+    <h3 class="amenities-title">Еда</h3>
     <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
   </li>
   <li class="advantages-item advantages-item-souvenirs advantages-img amenities">
     <img src="images/decor/advantage-icon-gift.svg" alt="Сувениры">
-    <h3 class="advantages-title">Сувениры</h3>
+    <h3 class="amenities-title">Сувениры</h3>
     <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
   </li>
   </ul>
@@ -114,8 +114,8 @@
 <section class="subscribe subscribe-main">
   <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
   <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-  <form action="https://echo.htmlacademy.ru" method="post">
-  <input type="text" name="enter-email" placeholder="Ваш e-mail">
+  <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+  <input class="subscribe-input" type="text" name="enter-email" placeholder="Ваш e-mail">
   <button class="button subscribe-button" type="submit">Подписаться</button>
   </form>
   </section>
@@ -144,9 +144,34 @@
 <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 </section>
 <section class="footer-logo">
+  <a class="footer-link" href="https://htmlacademy.ru">
   <img src="images/decor/logo_htmlacademy.svg" alt="logo-htmlacademy">
+  </a>
 </section>
 </footer>
+</div>
+<div class="modal-container modal-container-close">
+  <div class="modal modal-auth">
+    <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <span class="arrival-date">Дата Заезда:</span>
+      <form>
+        <input class="arrival-date-form" type="date" name="arrival-date">
+      </form>
+      <span class="departure-date">Дата Выезда:</span>
+      <form>
+        <input class="departure-date-form" type="date" name="departure-date">
+      </form>
+      <span class="adult">Взрослые:</span>
+      <span class="adult-count">2</span>
+      <span class="children">Дети:</span>
+      <span class="children-count">2</span>
+      <button class="button modal-content-button" type="submit">Найти</button>
+    </section>
+  </div>
 </div>
   </body>
 </html>
