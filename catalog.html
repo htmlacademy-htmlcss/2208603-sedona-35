@@ -127,10 +127,10 @@
    <input class="price-to" type="text" name="price-to" value="9000">
    <div class="range-slider">
     <div class="range-bar" style="width: 220px">
-      <button class="range-toggle toggle-min">
+      <button class="range-toggle toggle-min" type="button">
        <span class="visually-hidden">Изменить минимальную цену.</span>
       </button>
-      <button class="range-toggle toggle-max">
+      <button class="range-toggle toggle-max" type="button">
        <span class="visually-hidden">Изменить максимальную цену.</span>
       </button>
     </div>
@@ -205,8 +205,13 @@
       <p class="product-card-price">От 4000 ₽</p>
       <a class="product-card-button button product-card-button-more" href="#">Подробнее</a>
       <a class="product-card-button button product-card-button-favorites" href="#">В избранное</a>
-      <img class="rating-image" src="images/decor/four-stars.svg" alt="four-stars">
-      <p class="rating">Рейтинг: 8.5</p>
+      <div class="rating">
+      <span class="rating-star"></span>
+      <span class="rating-star"></span>
+      <span class="rating-star"></span>
+      <span class="rating-star"></span>
+      </div>
+      <p class="rating-text">Рейтинг: 8.5</p>
       </li>
   <li class="product-card">
     <a class="product-card-link" href="product.html">
@@ -217,8 +222,13 @@
     <p class="product-card-price">От 5000 ₽</p>
     <a class="product-card-button button product-card-button-more" href="#">Подробнее</a>
     <a class="product-card-button button product-card-button-favorites button-favorites-selected" href="#">В избранном</a>
-    <img class="rating-image" src="images/decor/four-stars.svg" alt="four-stars">
-    <p class="rating">Рейтинг: 9.2</p>
+    <div class="rating">
+      <span class="rating-star"></span>
+      <span class="rating-star"></span>
+      <span class="rating-star"></span>
+      <span class="rating-star"></span>
+      </div>
+    <p class="rating-text">Рейтинг: 9.2</p>
     </li>
     <li class="product-card">
       <a class="product-card-link" href="product.html">
@@ -229,8 +239,12 @@
       <p class="product-card-price">От 2500 ₽</p>
       <a class="product-card-button button product-card-button-more" href="#">Подробнее</a>
       <a class="product-card-button button product-card-button-favorites" href="#">В избранное</a>
-      <img class="rating-image" src="images/decor/three-stars.svg" alt="three-stars">
-      <p class="rating">Рейтинг: 6.9</p></li>
+      <div class="rating">
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        </div>
+      <p class="rating-text">Рейтинг: 6.9</p></li>
       <li class="product-card">
         <a class="product-card-link" href="product.html">
           <img class="product-card-image" src="images/content/hotel-greentree-inn.jpg" width="300" height="212" alt="greentree-inn">
@@ -240,8 +254,11 @@
         <p class="product-card-price">От 1500 ₽</p>
         <a class="product-card-button button product-card-button-more" href="#">Подробнее</a>
         <a class="product-card-button button product-card-button-favorites" href="#">В избранное</a>
-        <img class="rating-image" src="images/decor/two-stars.svg" alt="two-stars">
-        <p class="rating">Рейтинг: 5.0</p></li>
+        <div class="rating">
+          <span class="rating-star"></span>
+          <span class="rating-star"></span>
+          </div>
+        <p class="rating-text">Рейтинг: 5.0</p></li>
   </ul>
   <ul class="pagination">
     <li class="pagination-item">
@@ -267,7 +284,7 @@
     <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
     <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-    <input class="subscribe-input" type="text" name="enter-email" placeholder="Ваш e-mail">
+    <input class="subscribe-input" type="text" name="enter-email" placeholder="Ваш e-mail" required>
     <button class="button subscribe-button" type="submit">Подписаться</button>
     </form>
     </section>

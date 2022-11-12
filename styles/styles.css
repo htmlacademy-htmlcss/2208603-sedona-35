@@ -65,7 +65,7 @@ body {
   align-items: center;
   justify-content: center;
   list-style-type: none;
-  padding-left: 46px;
+  padding-left: 44px;
   gap: 32px;
 }
 
@@ -322,7 +322,7 @@ body {
 }
 
 .subscribe {
-  padding-top: 96px;
+  padding-top: 98px;
   padding-bottom: 104px;
   background-size: 100% auto;
   color: #000000;
@@ -360,7 +360,7 @@ body {
   width: 232px;
   height: 52px;
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 36px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -393,7 +393,7 @@ body {
   width: 1200px;
   color: #ffffff;
   display: flex;
-  padding: 35px 70px 52px 70px;
+  padding: 35px 70px 53px 70px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -430,7 +430,7 @@ body {
   margin: 0;
   width: 100%;
   grid-column: 1 / -1;
-  padding-top: 16px;
+  padding-top: 15px;
   font-size: 24px;
   line-height: 28px;
 }
@@ -440,7 +440,7 @@ body {
   grid-column: 1 / -1;
 }
 
-.rating {
+.rating-text {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
@@ -459,7 +459,7 @@ body {
 .pagination {
   background-color: #ffffff;
   display: flex;
-  padding: 60px 70px 60px 70px;
+  padding: 79px 70px 60px 70px;
   list-style-type: none;
   gap: 8px;
   margin: 0;
@@ -529,8 +529,8 @@ body {
   flex-direction: row;
   width: 1060px;
   margin: 0 auto;
-  justify-content: space-between;
   padding-left: 0;
+  gap: 17px 20px;
 }
 
 .product-card {
@@ -543,7 +543,6 @@ body {
   border-radius: 4px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 20px;
   padding-top: 20px;
 }
 
@@ -591,11 +590,26 @@ background-color: #68A2CA;
 cursor: pointer;
 }
 
-.rating-image {
+.rating {
   grid-column: 1 / 2;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 17px;
 }
 
-.rating {
+.rating-star {
+  background-image: url(../images/decor/star.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.rating-text {
   grid-column: 2 / 3;
   background-color: #F2F2F2;
   width: 140px;
@@ -687,7 +701,7 @@ cursor: pointer;
   height: 49px;
   margin-left: auto;
   margin-right: 62px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
 }
 
@@ -801,7 +815,7 @@ cursor: pointer;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border: none;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 24px;
   padding-left: 20px;
   background-color: #f2f2f2;
@@ -849,6 +863,7 @@ cursor: pointer;
   line-height: 24px;
   font-weight: 700;
   margin-bottom: -4px;
+  margin-left: 2px;
 }
 
 .price-from {
@@ -859,6 +874,7 @@ cursor: pointer;
   border-top-left-radius: 4px;
   border: none;
   outline: none;
+  margin-left: 2px;
 }
 
 .price-to {
@@ -869,6 +885,7 @@ cursor: pointer;
   border-top-right-radius: 4px;
   border: none;
   outline: none;
+  margin-left: 2px;
 }
 
 .price-from,
@@ -936,7 +953,7 @@ cursor: pointer;
   position: relative;
   height: 4px;
   background-color: grey;
-  top: 8px;
+  top: 9px;
 }
 
 .range-bar {
@@ -965,11 +982,12 @@ cursor: pointer;
 
 .toggle-min {
   top: -8px;
+  left: 2px;
 }
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -9px;
 }
 
 .catalog-filter-form {
@@ -989,6 +1007,7 @@ cursor: pointer;
 
 .catalog-filter-button-apply {
   background-color: #82B3D3;
+  margin-top: -1px;
 }
 
 .catalog-filter-button-erase {
@@ -1082,6 +1101,10 @@ color: rgba(255, 255, 255, 0.3);
 
 .footer-social-icon:active path {
   fill: rgba(104, 162, 202, 0.3)
+}
+
+.footer-logo-icon {
+  margin-top: 2px;
 }
 
 .footer-logo-icon:hover path,
@@ -1195,10 +1218,20 @@ color: rgba(255, 255, 255, 0.3);
 .subtract,
 .add {
   border: none;
-  width: 20px;
-  height: 20px;
   position: absolute;
   cursor: pointer;
+  padding: 0;
+  padding-left: 6px
+}
+
+.subtract:hover path,
+.add:hover path {
+  fill: #000000;
+}
+
+.subtract:focus path,
+.add:focus path {
+  border: 3px solid #83B3D3;
 }
 
 .subtract-adult {
@@ -1223,6 +1256,10 @@ color: rgba(255, 255, 255, 0.3);
   top: 372px;
   left: 611px;
   z-index: 1;
+}
+
+.count-image {
+  display: block;
 }
 
 .modal-label-children {
