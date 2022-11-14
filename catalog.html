@@ -121,7 +121,7 @@
     </li>
     </ul>
   </fieldset>
-  <form class="price-range" action="https://echo.htmlacademy.ru/" method="post">
+  <form class="price-range" name="price-range" action="https://echo.htmlacademy.ru/" method="post">
   <span class="price-range-text">Стоимость, ₽:</span>
    <input class="price-from" type="text" name="price-from" value="0">
    <input class="price-to" type="text" name="price-to" value="9000">
@@ -136,7 +136,7 @@
     </div>
  </div>
   </form>
-  <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+  <form class="catalog-filter-form" name="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
     <button class="button catalog-filter-button catalog-filter-button-apply" type="submit">Применить</button>
     <button class="button catalog-filter-button catalog-filter-button-erase" type="reset">Сбросить</button>
   </form>
@@ -283,7 +283,7 @@
   <section class="subscribe subscribe-catalog">
     <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
     <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="subscribe-form" name="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
     <input class="subscribe-input" type="text" name="enter-email" placeholder="Ваш e-mail" required>
     <button class="button subscribe-button" type="submit">Подписаться</button>
     </form>
@@ -291,6 +291,7 @@
 </main>
 <footer class="page-footer footer-container">
   <section class="footer-social">
+    <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="footer-social-list">
       <li class="footer-social-item">
       <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy">
@@ -319,9 +320,11 @@
     </ul>
     </section>
   <section class="footer-contacts">
+    <h2 class="visually-hidden">Контакты</h2>
   <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
   </section>
   <section class="footer-logo">
+    <h2 class="visually-hidden">HTML Academy</h2>
     <a class="footer-link" href="https://htmlacademy.ru">
       <svg class="footer-logo-icon" width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_33515_1190)">
